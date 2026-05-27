@@ -86,10 +86,36 @@ if ( ! defined( 'ABSPATH' ) ) {
 					}
 					?>
 				</ul>
-				<?php if ( ! apply_filters( 'kuantokusta_hide_settings_pro_ad', false ) ) { ?>
-					<hr/>
-					<iframe src="https://www.webdados.pt/kuantokustaiframe" scrolling="no"></iframe>
-				<?php } ?>
+				<?php
+				if ( ! apply_filters( 'kuantokusta_hide_settings_pro_ad', false ) ) {
+					$banners = array(
+						'invoicexpress' => array(
+							'title' => 'Facturação com InvoiceXpress para WooCommerce',
+							'html'  => '<p><strong>Ainda não tem facturação integrada na sua loja online?</strong></p><p>Conheça a nossa solução de facturação com InvoiceXpress para o WooCommerce.</p>',
+							'url'   => 'https://invoicewoo.com/pt-pt/?utm_source=kk_woocommerce_plugin&utm_medium=link&utm_campaign=kk_woocommerce_plugin',
+							'image' => plugins_url( '../../images/invoicexpress.svg', __FILE__ ),
+						),
+						'dpdportugal'   => array(
+							'title' => 'DPD Portugal para WooCommerce',
+							'html'  => '<p><strong>Ainda faz as guias DPD manualmente?</strong></p><p>Conheça a nossa integração com a DPD Portugal, e faça tudo dentro do WooCommerce.</p>',
+							'url'   => 'https://nakedcatplugins.com/product/dpd-portugal-for-woocommerce/?utm_source=kk_woocommerce_plugin&utm_medium=link&utm_campaign=kk_woocommerce_plugin',
+							'image' => plugins_url( '../../images/dpdportugal.png', __FILE__ ),
+						),
+					);
+					$banner  = ! empty( $banners ) ? $banners[ array_rand( $banners ) ] : array();
+					if ( ! empty( $banner ) ) {
+						?>
+						<hr>
+						<?php echo wp_kses_post( $banner['html'] ); ?>
+						<p>
+							<a href="<?php echo esc_url( trim( $banner['url'] ) ); ?>" target="_blank">
+								<img src="<?php echo esc_url( $banner['image'] ); ?>" style="max-width: 100%; height: auto;" alt="<?php echo esc_attr( $banner['title'] ); ?>"/>
+							</a>
+						</p>
+						<?php
+					}
+				}
+				?>
 				<div class="clear"></div>
 			</div>
 		<?php } ?>
