@@ -4,7 +4,7 @@ Tags: marketplace, feed, comparison, e-commerce, Portugal
 Requires at least: 6.2
 Tested up to: 7.0
 Requires PHP: 7.2
-Stable tag: 5.4
+Stable tag: 5.5
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -119,6 +119,11 @@ Sure. Go to [GlotPress](https://translate.wordpress.org/projects/wp-plugins/feed
 2. Product level settings
 
 == Changelog ==
+
+= 5.5 - 2026-05-27 =
+* [TWEAK] Stop loading iframe for right bar ads
+* [DEV] Fix transient for redirect after plugin activation
+* [DEV] Tested up to WordPress 7.1-alpha-62411 and WooCommerce 10.8.0
 
 = 5.4 - 2026-04-17 =
 * [NEW] Plugin ownership transferred from [Marco Almeida | Webdados](https://profiles.wordpress.org/webdados/) to [Naked Cat Plugins](https://profiles.wordpress.org/nakedcatplugins/) on WordPress.org - No worries, we’re the same people :-)
