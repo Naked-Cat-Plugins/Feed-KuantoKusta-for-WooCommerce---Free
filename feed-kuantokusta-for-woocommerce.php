@@ -45,7 +45,7 @@ add_action( 'init', 'fkkwc_init', 1 );
  * On activation, set a transient so we can redirect to the settings page.
  */
 function fkkwc_activation_redirect() {
-	set_transient( 'fkkwc_activation_redirect', true, 30 );
+	set_transient( 'fkkwc_activation_redirect_' . get_current_user_id(), true, 30 );
 }
 register_activation_hook( __FILE__, 'fkkwc_activation_redirect' );
 
@@ -55,8 +55,13 @@ register_activation_hook( __FILE__, 'fkkwc_activation_redirect' );
 add_action(
 	'admin_init',
 	function () {
-		if ( get_transient( 'fkkwc_activation_redirect' ) ) {
-			delete_transient( 'fkkwc_activation_redirect' );
+		// Do not redirect during AJAX requests.
+		if ( wp_doing_ajax() ) {
+			return;
+		}
+		$transient_key = 'fkkwc_activation_redirect_' . get_current_user_id();
+		if ( get_transient( $transient_key ) ) {
+			delete_transient( $transient_key );
 			// Do not redirect on bulk activation.
 			if ( ! isset( $_GET['activate-multi'] ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Recommended
 				wp_safe_redirect( admin_url( 'admin.php?page=wc-settings&tab=kuantokusta' ) );
