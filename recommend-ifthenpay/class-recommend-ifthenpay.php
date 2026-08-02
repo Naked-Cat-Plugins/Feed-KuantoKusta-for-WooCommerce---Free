@@ -2,7 +2,7 @@
 /**
  * Class Recommend_Ifthenpay
  *
- * @version 1.3
+ * @version 1.4
  */
 
 namespace NakedCatPlugins\Recommend_Ifthenpay;
@@ -33,11 +33,13 @@ class Recommend_Ifthenpay {
 	const ICON_URL = 'https://ps.w.org/multibanco-ifthen-software-gateway-for-woocommerce/assets/icon-256x256.gif';
 
 	/**
-	 * ISO 3166-1 alpha-2 code of the only country for which the entry is shown.
+	 * ISO 3166-1 alpha-2 code identifying Portugal for reference.
 	 *
-	 * Compared against the REST `location` request parameter (with fallback to
-	 * `WC()->countries->get_base_country()`) so the entry only appears on stores
-	 * whose base country is Portugal.
+	 * Computed against the REST `location` request parameter (with fallback to
+	 * `WC()->countries->get_base_country()`) in inject_suggestion() below, but
+	 * deliberately not used to gate the suggestion: a store running one of our
+	 * Portugal-specific plugins is already a relevant signal on its own,
+	 * regardless of its configured WooCommerce base country.
 	 */
 	const ALLOWED_COUNTRY = 'PT';
 
@@ -210,17 +212,9 @@ class Recommend_Ifthenpay {
 			return $response;
 		}
 
-		// Country gate: use the request's location param, fall back to WC base country.
-		$location = $request->get_param( 'location' );
-
-		if ( empty( $location ) && function_exists( 'WC' ) && WC()->countries ) {
-			$location = WC()->countries->get_base_country();
-		}
-
-		if ( self::ALLOWED_COUNTRY !== strtoupper( (string) $location ) ) { // phpcs:ignore Generic.CodeAnalysis.EmptyStatement.DetectedIf
-			// If a Portuguese plugin is installed, why would we want to remove this?
-			// return $response;
-		}
+		// No country gate: a store running one of our Portugal-specific plugins is a
+		// relevant signal on its own, regardless of its configured base country, so the
+		// suggestion is intentionally shown everywhere. See the ALLOWED_COUNTRY docblock.
 
 		$data = $response->get_data();
 
@@ -229,8 +223,12 @@ class Recommend_Ifthenpay {
 		}
 
 		// Add to "More payment options" section - No dismissal possuble
-		array_unshift( $data['suggestions'], $this->build_suggestion_entry() );
-		array_unshift( $data['suggestion_categories'], $this->build_suggestion_category_entry() );
+		if ( isset( $data['suggestions'] ) && is_array( $data['suggestions'] ) ) {
+			array_unshift( $data['suggestions'], $this->build_suggestion_entry() );
+		}
+		if ( isset( $data['suggestion_categories'] ) && is_array( $data['suggestion_categories'] ) ) {
+			array_unshift( $data['suggestion_categories'], $this->build_suggestion_category_entry() );
+		}
 
 		$response->set_data( $data );
 

@@ -120,6 +120,9 @@ Sure. Go to [GlotPress](https://translate.wordpress.org/projects/wp-plugins/feed
 
 == Changelog ==
 
+= TBA =
+* [DEV] Bundled ifthenpay suggestion module updated: documented the intentional Portugal-only display exception, guarded an array_unshift() call against a possible future WooCommerce REST response change
+
 = 5.5 - 2026-05-27 =
 * [TWEAK] Stop loading iframe for right bar ads
 * [DEV] Fix transient for redirect after plugin activation
