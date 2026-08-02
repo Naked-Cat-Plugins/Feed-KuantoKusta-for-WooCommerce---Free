@@ -102,7 +102,7 @@ add_action(
 );
 
 /* Recomment ifthenpay */
-if ( ! defined( 'WEBDADOS_RECOMMEND_IFTHENPAY' ) ) {
+if ( ! defined( 'NAKEDCAT_RECOMMEND_IFTHENPAY' ) ) {
 	require_once 'recommend-ifthenpay/recommend-ifthenpay.php';
 }
 

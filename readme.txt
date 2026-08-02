@@ -122,6 +122,7 @@ Sure. Go to [GlotPress](https://translate.wordpress.org/projects/wp-plugins/feed
 
 = TBA =
 * [DEV] Bundled ifthenpay suggestion module updated: documented the intentional Portugal-only display exception, guarded an array_unshift() call against a possible future WooCommerce REST response change
+* [DEV] The bundled ifthenpay suggestion module's opt-out check now uses the constant the module itself defines (`NAKEDCAT_RECOMMEND_IFTHENPAY`), it previously checked one that was never defined
 
 = 5.5 - 2026-05-27 =
 * [TWEAK] Stop loading iframe for right bar ads
