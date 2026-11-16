@@ -8,7 +8,7 @@ Stable tag: 5.6
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-This plugin allows you to generate a WooCommerce product feed to submit to Kuanto Kusta, a Portuguese price comparison website and marketplace.
+This plugin allows you to generate a WooCommerce product feed to submit to KuantoKusta, a Portuguese price comparison website and marketplace.
 
 == Description ==
 
@@ -44,7 +44,7 @@ In addition to all you can do with the free plugin, the [paid add-on](https://wb
 * Get Brand from the WooCommerce taxonomy (default since WooCommerce 9.6 - our field before that), any taxonomy, any custom field (for integration with other plugins), or from the default brand settings field;
 * Get Brand SKU/MPN from our product field (default), any taxonomy, or any custom field (for integration with other plugins);
 * Get Category from the native WooCommerce product categories, any other taxonomy, or any custom field (for integration with other plugins);
-* Integration with [BigBuy Dropshipping Connector for WooCommerce](https://wordpress.org/plugins/bigbuy-wc-dropshipping-connector/): get EAN from the BigBuy’s reference table
+* Integration with [BigBuy Dropshipping Connector for WooCommerce](https://wordpress.org/plugins/bigbuy-wc-dropshipping-connector/): get EAN from BigBuy’s reference table;
 * Up to 5 photos per product;
 * Custom attributes (like flavor, colour, genre, material, size, etc.) based on WooCommerce product attributes;
 * [Discount Rules for WooCommerce](https://wordpress.org/plugins/woo-discount-rules/) beta and limited compatibility;
@@ -55,7 +55,7 @@ In addition to all you can do with the free plugin, the [paid add-on](https://wb
 * Since version 5.0, both plugins (Free and PRO add-on) require each other on this version or above;
 * The Free plugin will not generate a feed if the PRO add-on is installed and is below version 5.0 - You need to either disable the PRO add-on or update it;
 * The Pro add-on will not run if the Free plugin is below version 5.0 - You need to update it;
-* Brand fields are now exclusive of the PRO add-on;
+* Brand fields are now exclusive to the PRO add-on;
 
 == Already know our other WooCommerce (premium) plugins? ==
 
@@ -64,18 +64,18 @@ In addition to all you can do with the free plugin, the [paid add-on](https://wb
 * [Portuguese Postcodes for WooCommerce](https://nakedcatplugins.com/product/portuguese-postcodes-for-woocommerce-technical-support/) - Automatic filling of the address details at the checkout, including street name and neighborhood, based on the postal code
 * [Invoicing with InvoiceXpress for WooCommerce](https://invoicewoo.com/) - Automatically issue invoices directly from the WooCommerce order
 * [DPD Portugal for WooCommerce](https://nakedcatplugins.com/product/dpd-portugal-for-woocommerce/) - Create shipping and return guide in the DPD API directly from the WooCommerce order
-* [Multibanco, MBWAY, Credit card, Payshop and Cofidis Pay for WooCommerce – PRO add-on](https://nakedcatplugins.com/product/multibanco-mbway-credit-card-payshop-ifthenpay-woocommerce-pro-add-on/) - Extra features for the plugin you already trust to receive payments on your WooCommerce store
+* [Multibanco, MB WAY, Credit card, Apple Pay, Google Pay, Payshop, and PIX (ifthenpay) for WooCommerce - PRO add-on](https://nakedcatplugins.com/product/multibanco-mbway-credit-card-payshop-ifthenpay-woocommerce-pro-add-on/) - Extra features for the plugin you already trust to receive payments on your WooCommerce store
 * [Advanced Coupon Restrictions for WooCommerce](https://nakedcatplugins.com/product/advanced-coupon-restrictions-for-woocommerce/) - Create coupons for any Product Taxonomy, User details, and Order destination.
 * [Simple Checkout Fields Manager for WooCommerce](https://nakedcatplugins.com/product/simple-custom-fields-for-woocommerce-blocks-checkout/) - Add custom fields and manage (remove, make required or optional) core fields on the new WooCommerce Block-based Checkout
 * [Simple WooCommerce Order Approval](https://nakedcatplugins.com/product/simple-woocommerce-order-approval/) - The hassle-free solution for WooCommerce order approval before payment
 * [Shop as Client for WooCommerce](https://nakedcatplugins.com/product/shop-as-client-for-woocommerce-pro-add-on/) - Quickly create orders on behalf of your customers
-* [Taxonomy/Term and Role based Discounts for WooCommerce](https://nakedcatplugins.com/product/taxonomy-term-and-role-based-discounts-for-woocommerce-pro-add-on/) - Easily create bulk discount rules for products based on any taxonomy terms (built-in or custom)
-* [DPD / SEUR / Geopost Pickup and Lockers network for WooCommerce](https://nakedcatplugins.com/product/dpd-seur-geopost-pickup-and-lockers-network-for-woocommerce/) - Deliver your WooCommerce orders on the DPD and SEUR Pickup network of Parcelshops and Lockers in 21 European countries
+* [Taxonomy/Term and Role-based Discounts for WooCommerce](https://nakedcatplugins.com/product/taxonomy-term-and-role-based-discounts-for-woocommerce-pro-add-on/) - Easily create bulk discount rules for products based on any taxonomy terms (built-in or custom)
+* [DPD / Geopost Pickup and Lockers network for WooCommerce](https://nakedcatplugins.com/product/dpd-seur-geopost-pickup-and-lockers-network-for-woocommerce/) - Deliver your WooCommerce orders on the DPD, Chronopost, BRT, SEUR and PostNord Pickup network of Parcelshops and Lockers in 25 European countries
 
 == Installation ==
 
 * Use the included automatic install feature on your WordPress admin panel and search for “Feed KuantoKusta for WooCommerce”.
-* Go to WooCoomerce > Settings > KuantoKusta, select the product types you want to include in the feed, and set other options as you wish.
+* Go to WooCommerce > Settings > KuantoKusta, select the product types you want to include in the feed, and set other options as you wish.
 * You can go to each product and set specific settings like hiding the product from the feed, its EAN/UPC code, brand, shipping cost, etc.
 
 == Frequently Asked Questions ==
@@ -99,7 +99,7 @@ Yes.
 
 = I need technical support. Who should I contact, KuantoKusta or Naked Cat Plugins? =
 
-The development and support of this plugin is [Naked Cat Plugins](https://nakedcatplugins.com?utm_source=wordpress.org&utm_medium=link&utm_campaign=kk_woocommerce_plugin) responsibility, although KuantoKusta can help you identify problems with your feed if your products are not successfully imported into their system (and that information will be helpful when asking us for support).
+The development and support of this plugin are the responsibility of [Naked Cat Plugins](https://nakedcatplugins.com?utm_source=wordpress.org&utm_medium=link&utm_campaign=kk_woocommerce_plugin), although KuantoKusta can help you identify problems with your feed if your products are not successfully imported into their system (and that information will be helpful when asking us for support).
 
 We do not provide free support for this plugin, but bugs can be reported on the [support forum at WordPress.org](https://wordpress.org/support/plugin/feed-kuantokusta-for-woocommerce/)
 
