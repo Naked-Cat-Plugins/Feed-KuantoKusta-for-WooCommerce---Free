@@ -16,7 +16,7 @@ This plugin generates a compatible [KuantoKusta](https://www.kuantokusta.pt/?utm
 
 The store owner should first [sign up with KuantoKusta](https://mystore.kuantokusta.pt/?utm_source=wordpress.org&utm_medium=link&utm_campaign=kk_woocommerce_plugin).
 
-This plugin was developed in partnership with KuantoKusta and it’s the WooCommerce-approved and advised solution by this price comparison website and marketplace. The KuantoKusta logo and brand are copyrighted and are used with their permission.
+This plugin was developed in partnership with KuantoKusta and it’s the WooCommerce-approved and advised solution by this price comparison website and marketplace. The KuantoKusta logo and brand are trademarks of KuantoKusta, used with their permission.
 
 == Features ==
 
