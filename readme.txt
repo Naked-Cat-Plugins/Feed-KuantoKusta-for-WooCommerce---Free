@@ -16,7 +16,7 @@ This plugin generates a compatible [KuantoKusta](https://www.kuantokusta.pt/?utm
 
 The store owner should first [sign up with KuantoKusta](https://mystore.kuantokusta.pt/?utm_source=wordpress.org&utm_medium=link&utm_campaign=kk_woocommerce_plugin).
 
-This plugin was developed in partnership with KuantoKusta and it’s the WooCommerce-approved and advised solution by this price comparison website and marketplace. The KuantoKusta logo and brand are trademarks of KuantoKusta, used with their permission.
+This plugin was developed in partnership with KuantoKusta and it’s the WooCommerce solution approved and recommended by this price comparison website and marketplace. The KuantoKusta logo and brand are trademarks of KuantoKusta, used with their permission.
 
 == Features ==
 
@@ -24,9 +24,8 @@ This plugin was developed in partnership with KuantoKusta and it’s the WooComm
 * Choose product types to include in the feed;
 * Include product variations;
 * Default values for stock, shipping cost, maximum preparation time, and maximum delivery time;
-* Product-level options to hide from feed, EAN/UPC, brand, shipping cost, maximum preparation time and maximum delivery time;
+* Product-level options to hide from feed, shipping cost, maximum preparation time and maximum delivery time (EAN/UPC comes from the WooCommerce GTIN field);
 * One photo per product;
-* Integration with the KuantoKusta javascript tracking code (experimental);
 * Developer hooks;
 * Minimal technical support (bug fixing only);
 
@@ -46,7 +45,7 @@ In addition to all you can do with the free plugin, the [paid add-on](https://wb
 * Get Category from the native WooCommerce product categories, any other taxonomy, or any custom field (for integration with other plugins);
 * Integration with [BigBuy Dropshipping Connector for WooCommerce](https://wordpress.org/plugins/bigbuy-wc-dropshipping-connector/): get EAN from BigBuy’s reference table;
 * Up to 5 photos per product;
-* Custom attributes (like flavor, colour, genre, material, size, etc.) based on WooCommerce product attributes;
+* Custom attributes (like flavor, color, genre, material, size, etc.) based on WooCommerce product attributes;
 * [Discount Rules for WooCommerce](https://wordpress.org/plugins/woo-discount-rules/) beta and limited compatibility;
 * Continued development;
 
@@ -76,7 +75,7 @@ In addition to all you can do with the free plugin, the [paid add-on](https://wb
 
 * Use the included automatic install feature on your WordPress admin panel and search for “Feed KuantoKusta for WooCommerce”.
 * Go to WooCommerce > Settings > KuantoKusta, select the product types you want to include in the feed, and set other options as you wish.
-* You can go to each product and set specific settings like hiding the product from the feed, its EAN/UPC code, brand, shipping cost, etc.
+* You can go to each product and set specific settings like hiding the product from the feed, its shipping cost, etc.
 
 == Frequently Asked Questions ==
 
