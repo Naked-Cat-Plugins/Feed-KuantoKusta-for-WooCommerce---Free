@@ -83,7 +83,7 @@ In addition to all you can do with the free plugin, the [paid add-on](https://wb
 = I need some modifications to my feed structure or data. Is it possible? =
 
 The plugin has a large number of WordPress hooks you can use to manipulate which products are included in the feed, which fields are shown on the feed, and even manipulate the content of each field.
-If you are not comfortable with development, you can [hire us](https://www.webdados.pt/contactos/?utm_source=wordpress.org&utm_medium=link&utm_campaign=kk_woocommerce_plugin) to make the customization for you.
+If you are not comfortable with development, you can [hire us](https://nakedcatplugins.com/product/custom-development/?utm_source=wordpress.org&utm_medium=link&utm_campaign=kk_woocommerce_plugin) to make the customization for you.
 
 = My feed URL is returning a 404 error =
 
@@ -105,7 +105,7 @@ We do not provide free support for this plugin, but bugs can be reported on the 
 
 You’ll get included support if you buy the plugin [PRO add-on](https://wbds.pt/fAK).
 
-For premium/urgent support or custom development, you should contact [Webdados](https://www.webdados.pt/contactos/?utm_source=wordpress.org&utm_medium=link&utm_campaign=kk_woocommerce_plugin) directly. Charges will apply.
+For premium/urgent support or custom development, you should contact [Naked Cat Plugins](https://nakedcatplugins.com/product/custom-development/?utm_source=wordpress.org&utm_medium=link&utm_campaign=kk_woocommerce_plugin) directly. Charges will apply.
 
 = Where do I report security vulnerabilities found in this plugin? =  
  
