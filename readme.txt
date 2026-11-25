@@ -121,6 +121,9 @@ Sure. Go to [GlotPress](https://translate.wordpress.org/projects/wp-plugins/feed
 
 == Changelog ==
 
+= TBA =
+* [FIX] The settings page opens by itself only when you activate the plugin alone in the WordPress admin. Activating it with WP-CLI no longer cancels the next WP-CLI plugin command
+
 = 5.6 - 2026-08-03 =
 * [DEV] Bundled ifthenpay suggestion module updated
 * [FIX] FAQ link was entirely commented out in the license-key field, users got no FAQ link at all in Settings [Pro add-on](https://wbds.pt/fAK)
